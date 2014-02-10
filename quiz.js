@@ -16,6 +16,7 @@
     $('a#nextQuestion.btn.btn-primary.btn-lg').click(function () {
         console.log("nextQuestionbuttonhasbeenclicked");
         
+        $('input[name=optionsRadios]').attr('checked',false);
         $('#answerFeedBack').addClass('hidden');
         $('.form-group').toggleClass('hidden');
         $('#submit').toggleClass('hidden');
@@ -90,7 +91,7 @@ var allQuestions = [{
         },
         {
             question: "Out of all the princesses, who does the ice king stalk the most?",
-            options: ['Jungle Princess', 'Embryo Princess', 'Jungle Princess', 'Princess Bubblegum'],
+            options: ['Lumpy Space Princess', 'Embryo Princess', 'Jungle Princess', 'Princess Bubblegum'],
             answer: 3,
             gif: 'question5.gif',
         }
